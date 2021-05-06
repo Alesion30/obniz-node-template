@@ -7,8 +7,8 @@
 
 ## プロジェクト作成手順
 1. yarn init
-2. yarn add obniz
-3. yarn add -D typescript @types/node ts-node dotenv tsconfig-paths
+2. yarn add obniz express
+3. yarn add -D typescript @types/node @types/express ts-node dotenv tsconfig-paths
 4. touch tsconfig.json
 ```tsconfig.json
 {
