@@ -15,11 +15,6 @@ OBNIZ_ID=(obniz上に表示されているID)
 ```
 6. `yarn start`
 
-## デプロイする（vercel）
-1. `yarn global add vercel@latest`
-2. `vercel login`
-3. `vercel`
-
 ## 1からプロジェクトを作成する手順
 1. `yarn init`
 2. `yarn add obniz express`
