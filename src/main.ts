@@ -1,9 +1,5 @@
-import * as Obniz from "obniz";
-import { OBNIZ_ID } from "./config";
-const obniz = new Obniz(OBNIZ_ID);
+import { PORT } from "@/config";
+import route from "@/routes";
 
-obniz.onconnect = () => {
-  obniz.display.clear();
-  console.log("Hello World!");
-  obniz.display.print("Hello World!");
-};
+route.listen(PORT);
+console.log("Server running at ${PORT} > %o", `http://localhost:${PORT}`);

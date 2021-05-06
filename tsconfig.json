@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
     "sourceMap": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "outDir": "dist",
     "target": "es6",
     "module": "commonjs",
