@@ -4,8 +4,18 @@
 - https://qiita.com/chibi929/items/57eb843a5653a12df8f2
 - https://qiita.com/mangano-ito/items/75e65071c9c482ddc335
 
+## 動作確認
+1. `git clone https://github.com/Alesion30/obniz-node-template.git`
+2. `cd obniz-node-template`
+3. `yarn install`
+4. `touch .env`
+5. .envの値をセットする
+```.env
+OBNIZ_ID=(obniz上に表示されているID)
+```
+6. `yarn start`
 
-## プロジェクト作成手順
+## 1からプロジェクトを作成する手順
 1. `yarn init`
 2. `yarn add obniz express`
 3. `yarn add -D typescript @types/node @types/express ts-node dotenv tsconfig-paths`
