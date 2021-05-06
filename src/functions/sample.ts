@@ -19,7 +19,7 @@ export const sayhello = async (req: Request, res: Response) => {
     console.log(text);
     res.send(text);
   } else {
-    const error = "Connection with obniz failed..."
+    const error = "Connection with obniz failed...";
     console.log(error);
     res.status(500).send(error);
   }
