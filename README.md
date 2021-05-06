@@ -6,10 +6,10 @@
 
 
 ## プロジェクト作成手順
-1. yarn init
-2. yarn add obniz express
-3. yarn add -D typescript @types/node @types/express ts-node dotenv tsconfig-paths
-4. touch tsconfig.json
+1. `yarn init`
+2. `yarn add obniz express`
+3. `yarn add -D typescript @types/node @types/express ts-node dotenv tsconfig-paths`
+4. `touch tsconfig.json`
 ```tsconfig.json
 {
   "compilerOptions": {
@@ -27,13 +27,13 @@
   }
 }
 ```
-5. touch .env
+5. `touch .env`
 ```.env
 OBNIZ_ID=(obniz上に表示されているID)
 ```
-6. yarn add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-config-prettier
-7. touch tsconfig.eslint.json
-```
+6. `yarn add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-config-prettier`
+7. `touch tsconfig.eslint.json`
+```tsconfig.eslint.json
 {
   "extends": "./tsconfig.json",
   "include": [
@@ -46,8 +46,8 @@ OBNIZ_ID=(obniz上に表示されているID)
   ]
 }
 ```
-8. touch .eslintrc.js
-```
+8. `touch .eslintrc.js`
+```.eslintrc.js
 module.exports = {
   root: true,
   env: {
@@ -75,12 +75,12 @@ module.exports = {
   },
 };
 ```
-9. touch .eslintignore
+9. `touch .eslintignore`
 ```.eslintignore
 .eslintrc.js
 ```
-10. echo "{}"> .prettierrc.json
-11. touch .prettierignore
+10. `echo "{}"> .prettierrc.json`
+11. `touch .prettierignore`
 ```.prettierignore
 node_modules
 ```
