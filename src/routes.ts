@@ -9,7 +9,7 @@ app.get("/", async (req: Request, res: Response) => {
     obniz.display.print("Hello World!");
     res.send("Hello World!");
   } else {
-    res.send("Connection with obniz failed...");
+    res.status(500).send("Connection with obniz failed...");
   }
 });
 
