@@ -1,7 +1,8 @@
-import route from "@/plugin/express";
+import { Request, Response } from "@/typings/express";
+import app from "@/plugin/express";
 import obniz from "@/plugin/obniz";
 
-route.get("/", async (req: any, res: any) => {
+app.get("/", async (req: Request, res: Response) => {
   const connected = await obniz.connectWait({ timeout: 10 });
   if (connected) {
     obniz.display.clear();
@@ -12,4 +13,4 @@ route.get("/", async (req: any, res: any) => {
   }
 });
 
-export default route;
+export default app;

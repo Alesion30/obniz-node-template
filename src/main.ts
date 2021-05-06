@@ -1,5 +1,5 @@
 import { PORT } from "@/config";
-import route from "@/routes";
+import app from "@/routes";
 
-route.listen(PORT);
+app.listen(PORT);
 console.log("Server running at ${PORT} > %o", `http://localhost:${PORT}`);
