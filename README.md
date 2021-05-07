@@ -7,9 +7,10 @@
 ## 動作確認
 1. `git clone https://github.com/Alesion30/obniz-node-template.git`
 2. `cd obniz-node-template`
-3. `yarn install`
-4. `touch .env`
-5. .envの値をセットする
+3. `rm -rf .git`
+4. `yarn install`
+5. `touch .env`
+6. .envの値をセットする
 ```.env
 OBNIZ_ID=(obniz上に表示されているID)
 ```
